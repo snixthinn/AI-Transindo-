@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ai Transindo - Premium Bus Pariwisata Booking. Choose from Minivan, Medium, Big, and Luxury Sleeper Buses.">
+    <!-- Meta tags for better SEO and Accessibility -->
+    <meta name="theme-color" content="#0f172a">
+    <meta name="robots" content="index, follow">
+    <title>Ai Transindo | Premium Bus Tour Booking</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar" role="banner">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#" aria-label="Ai Transindo Home">Ai<span>Transindo</span></a>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links" id="navLinks" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#fleet" role="menuitem">Our Fleet</a></li>
+                    <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                    <li role="none"><a href="#testimonials" role="menuitem">Reviews</a></li>
+                    <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+                    <li role="none"><a href="#booking" role="menuitem">Booking</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-primary" aria-label="Book a Bus Now">Book Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <h1 id="hero-title" class="animate-fade-in-up">Travel with <br><strong class="highlight">Elegance & Comfort</strong></h1>
+                <p class="animate-fade-in-up delay-1">Premium bus tourism services for your unforgettable journeys. Experience top-tier safety, comfort, and luxury.</p>
+                <div class="hero-buttons animate-fade-in-up delay-2">
+                    <a href="#fleet" class="btn btn-primary btn-large" aria-label="Explore our bus fleet">Explore Fleet</a>
+                    <a href="#features" class="btn btn-secondary btn-large" aria-label="Learn more about our features">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Overview -->
+        <section class="features-summary" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <header class="section-header reveal">
+                    <h2 id="features-title">Why Choose Ai Transindo?</h2>
+                    <p>We pride ourselves on delivering a premium travel experience.</p>
+                </header>
+                <div class="features-grid" role="list">
+                    <article class="feature-card reveal delay-1" role="listitem">
+                        <div class="icon-wrapper" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Top Safety</h3>
+                        <p>Our fleet undergoes rigorous safety checks and is strictly maintained to the highest standards.</p>
+                    </article>
+                    <article class="feature-card reveal delay-2" role="listitem">
+                        <div class="icon-wrapper" aria-hidden="true"><i class="fas fa-couch"></i></div>
+                        <h3>Luxurious Comfort</h3>
+                        <p>Plush seating, immense legroom, and climate control ensure a relaxing journey.</p>
+                    </article>
+                    <article class="feature-card reveal delay-3" role="listitem">
+                        <div class="icon-wrapper" aria-hidden="true"><i class="fas fa-wifi"></i></div>
+                        <h3>Modern Amenities</h3>
+                        <p>Free Wi-Fi, charging ports, and premium entertainment systems on board.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Showcase Section -->
+        <section class="fleet" id="fleet" aria-labelledby="fleet-title">
+            <div class="container">
+                <header class="section-header reveal">
+                    <h2 id="fleet-title">Our Premium Fleet</h2>
+                    <p>Choose the perfect bus category tailored to your group size and needs.</p>
+                </header>
+                
+                <div class="fleet-grid">
+                    
+                    <!-- Minivan Card -->
+                    <article class="fleet-card reveal">
+                        <figure class="fleet-image">
+                            <img src="images/minivan_bus.png" alt="Sleek white Minivan like Toyota Hiace" loading="lazy">
+                        </figure>
+                        <div class="fleet-content">
+                            <h3>Minivan (Hiace/Elf)</h3>
+                            <div class="fleet-specs" aria-label="Bus Specifications">
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 14 - 19 Seats</span>
+                                <span><i class="fas fa-snowflake" aria-hidden="true"></i> Full AC</span>
+                                <span><i class="fas fa-chair" aria-hidden="true"></i> Reclining Seats</span>
+                            </div>
+                            <p>Ideal for intimate family trips or small corporate groups requiring agile premium transport.</p>
+                            <div class="fleet-actions">
+                                <span class="price" aria-label="Price from 1.0 million Rupiah per day">From Rp 1.0M/Day</span>
+                                <a href="#contact" class="btn btn-primary btn-block">Book Minivan</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Medium Bus Card -->
+                    <article class="fleet-card reveal delay-1">
+                        <figure class="fleet-image">
+                            <img src="images/medium_bus.png" alt="Medium sized luxury tourist bus" loading="lazy">
+                            <figcaption class="fleet-badge sr-only">Popular Category</figcaption>
+                            <div class="fleet-badge" aria-hidden="true">Popular</div>
+                        </figure>
+                        <div class="fleet-content">
+                            <h3>Medium Bus</h3>
+                            <div class="fleet-specs" aria-label="Bus Specifications">
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 25 - 33 Seats</span>
+                                <span><i class="fas fa-snowflake" aria-hidden="true"></i> Full AC</span>
+                                <span><i class="fas fa-music" aria-hidden="true"></i> Audio/Video</span>
+                            </div>
+                            <p>Perfect for corporate outings, family gatherings, or medium-sized tour groups. Cozy yet spacious.</p>
+                            <div class="fleet-actions">
+                                <span class="price" aria-label="Price from 1.5 million Rupiah per day">From Rp 1.5M/Day</span>
+                                <a href="#contact" class="btn btn-primary btn-block">Book Medium Bus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Big Bus Card -->
+                    <article class="fleet-card reveal">
+                        <figure class="fleet-image">
+                            <img src="images/big_bus.png" alt="Large luxury tourist coach bus" loading="lazy">
+                            <figcaption class="fleet-badge premium sr-only">Premium Category</figcaption>
+                            <div class="fleet-badge premium" aria-hidden="true">Premium</div>
+                        </figure>
+                        <div class="fleet-content">
+                            <h3>Big Bus</h3>
+                            <div class="fleet-specs" aria-label="Bus Specifications">
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 45 - 59 Seats</span>
+                                <span><i class="fas fa-snowflake" aria-hidden="true"></i> Full AC</span>
+                                <span><i class="fas fa-toilet" aria-hidden="true"></i> Restroom</span>
+                            </div>
+                            <p>The ultimate choice for large groups. Designed for maximum comfort on long-distance journeys.</p>
+                            <div class="fleet-actions">
+                                <span class="price" aria-label="Price from 2.5 million Rupiah per day">From Rp 2.5M/Day</span>
+                                <a href="#contact" class="btn btn-primary btn-block">Book Big Bus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sleeper Bus Card -->
+                    <article class="fleet-card reveal delay-1">
+                        <figure class="fleet-image">
+                            <img src="images/sleeper_bus.png" alt="Ultra luxury double-decker sleeper bus" loading="lazy">
+                            <figcaption class="fleet-badge luxury sr-only">Luxury Category</figcaption>
+                            <div class="fleet-badge luxury" aria-hidden="true"><i class="fas fa-star"></i> Luxury</div>
+                        </figure>
+                        <div class="fleet-content">
+                            <h3>Sleeper Bus</h3>
+                            <div class="fleet-specs" aria-label="Bus Specifications">
+                                <span><i class="fas fa-bed" aria-hidden="true"></i> 20 - 24 Suites</span>
+                                <span><i class="fas fa-tv" aria-hidden="true"></i> Personal AVOD</span>
+                                <span><i class="fas fa-coffee" aria-hidden="true"></i> Pantry</span>
+                            </div>
+                            <p>Hotel-like experience on wheels. Private sleeping suites and premium amenities for overnight trips.</p>
+                            <div class="fleet-actions">
+                                <span class="price" aria-label="Price from 3.5 million Rupiah per day">From Rp 3.5M/Day</span>
+                                <a href="#booking" class="btn btn-primary btn-block">Book Sleeper Bus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header reveal">
+                    <h2 id="testimonials-title">What Our Customers Say</h2>
+                    <p>Real stories from our highly satisfied travelers and corporate clients.</p>
+                </header>
+                
+                <div class="testimonial-slider reveal delay-1" aria-label="Customer Reviews Carousel">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Review 1 -->
+                        <article class="testimonial-card active" aria-hidden="false">
+                            <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            <p class="review-text">"Ai Transindo completely elevated our company retreat! The Big Bus was pristine, the driver was incredibly professional, and the comfort was unmatched. Highly recommended!"</p>
+                            <div class="reviewer">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&auto=format&fit=crop" alt="Budi Santoso" class="reviewer-img" loading="lazy">
+                                <div class="reviewer-info">
+                                    <h4>Budi Santoso</h4>
+                                    <span>Corporate HR Manager</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Review 2 -->
+                        <article class="testimonial-card" aria-hidden="true">
+                            <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            <p class="review-text">"We booked the Luxury Sleeper Bus for our overnight family trip to Bali. It truly felt like a 5-star hotel on wheels. Worth every penny for the comfort and privacy!"</p>
+                            <div class="reviewer">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&auto=format&fit=crop" alt="Siti Rahma" class="reviewer-img" loading="lazy">
+                                <div class="reviewer-info">
+                                    <h4>Siti Rahma</h4>
+                                    <span>Family Traveler</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Review 3 -->
+                        <article class="testimonial-card" aria-hidden="true">
+                            <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                            <p class="review-text">"The Minivan was perfect for our executive team transfer. Quick, incredibly clean, with top-notch AC and very comfortable reclining seats. Will definitely book again."</p>
+                            <div class="reviewer">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&auto=format&fit=crop" alt="Anton Wijaya" class="reviewer-img" loading="lazy">
+                                <div class="reviewer-info">
+                                    <h4>Anton Wijaya</h4>
+                                    <span>Business Consultant</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button id="prevBtn" class="slider-btn" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="sliderDots">
+                            <!-- Dots generated by JS -->
+                        </div>
+                        <button id="nextBtn" class="slider-btn" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header reveal">
+                    <h2 id="faq-title">Frequently Asked Questions</h2>
+                    <p>Find quick answers to common questions about our fleet and booking process.</p>
+                </header>
+                
+                <div class="faq-accordion reveal delay-1">
+                    <details class="faq-item" open>
+                        <summary>What is included in the bus rental price?</summary>
+                        <div class="faq-content">
+                            <p>Our standard rental price includes the bus, an experienced professional driver, and fuel for the specified route. Tolls, parking fees, and driver's meals/accommodation are typically excluded unless you opt for our "All-In" package.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>How far in advance should I book my trip?</summary>
+                        <div class="faq-content">
+                            <p>We recommend booking at least 2-4 weeks in advance, especially during peak holiday seasons or long weekends, to guarantee the availability of your preferred fleet type.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>Can I request special amenities on board?</summary>
+                        <div class="faq-content">
+                            <p>Absolutely! We can accommodate requests for special catering, specific movie playlists on the AVOD systems, or onboard tour guides. Please mention your requests in the "Additional Details" section when booking.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>What is your cancellation policy?</summary>
+                        <div class="faq-content">
+                            <p>Cancellations made 14 days prior to departure are eligible for a full refund of the deposit. Cancellations within 7-13 days incur a 50% fee, and cancellations within 7 days are non-refundable. Please ask our team via WhatsApp for full terms.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="booking-section" id="booking" aria-labelledby="booking-title">
+            <div class="container">
+                <header class="section-header reveal">
+                    <h2 id="booking-title">Reserve Your Journey</h2>
+                    <p>Fill out the form below and we will connect you directly with our team via WhatsApp.</p>
+                </header>
+                
+                <div class="booking-container reveal delay-1">
+                    <div class="booking-info">
+                        <h3>Fast & Easy Booking</h3>
+                        <p>We use WhatsApp to guarantee a fast response and personalized service. Please provide your basic trip details to get started.</p>
+                        <ul class="booking-steps">
+                            <li><i class="fas fa-check-circle"></i> 1. Enter details</li>
+                            <li><i class="fas fa-check-circle"></i> 2. Click Submit</li>
+                            <li><i class="fas fa-check-circle"></i> 3. Confirm via WhatsApp</li>
+                        </ul>
+                    </div>
+                    
+                    <form id="waBookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="userName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="userName" name="userName" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="busType">Select Fleet <span class="required">*</span></label>
+                                <select id="busType" name="busType" required>
+                                    <option value="" disabled selected>-- Choose a Bus --</option>
+                                    <option value="Minivan (14-19 Seats)">Minivan (14-19 Seats)</option>
+                                    <option value="Medium Bus (25-33 Seats)">Medium Bus (25-33 Seats)</option>
+                                    <option value="Big Bus (45-59 Seats)">Big Bus (45-59 Seats)</option>
+                                    <option value="Sleeper Bus (20-24 Suites)">Sleeper Bus (Luxury)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tripDate">Trip Date <span class="required">*</span></label>
+                                <input type="date" id="tripDate" name="tripDate" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination">Destination <span class="required">*</span></label>
+                            <input type="text" id="destination" name="destination" required placeholder="E.g. Jakarta to Bandung">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tripDetails">Additional Details (Optional)</label>
+                            <textarea id="tripDetails" name="tripDetails" rows="4" placeholder="Special requests, pick-up points..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block btn-large">
+                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Banner -->
+        <aside class="cta-banner reveal" aria-labelledby="cta-title">
+            <div class="container cta-content">
+                <h2 id="cta-title">Ready to start your journey?</h2>
+                <p>Contact our team today to get the best quotes for your upcoming tour.</p>
+                <a href="#contact" class="btn btn-primary btn-large cta-btn">Contact Us Now</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" role="contentinfo">
+        <div class="container footer-content">
+            <address class="footer-col" style="font-style: normal;">
+                <div class="logo">
+                    <a href="#" aria-label="Return to top">Ai<span>Transindo</span></a>
+                </div>
+                <p>Your trusted partner for memorable, comfortable, and safe bus tours across the country.</p>
+                <div class="social-links" aria-label="Social Media Links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </address>
+            <nav class="footer-col" aria-label="Footer Quick Links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for exclusive tour deals and updates.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                    <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <address class="footer-col contact-info" style="font-style: normal;">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span class="sr-only">Address:</span> 123 Tour Street, Jakarta, ID</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <span class="sr-only">Phone Number:</span> <a href="tel:+6281234567890">+62 812 3456 7890</a></p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <span class="sr-only">Email:</span> <a href="mailto:booking@aitransindo.com">booking@aitransindo.com</a></p>
+            </address>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ai Transindo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
