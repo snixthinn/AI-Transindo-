@@ -133,11 +133,13 @@ ul {
 .btn-large {
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
+    min-height: 54px; /* Larger touch target for mobile */
 }
 
 .btn-block {
     display: block;
     width: 100%;
+    min-height: 48px; /* Larger touch target */
 }
 
 /* ===== NAVIGATION ===== */
@@ -210,8 +212,12 @@ ul {
 .hamburger {
     display: none;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Larger icon for touch */
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0.5rem; /* Larger touch target area */
+    z-index: 1001; /* Keep above mobile menu */
 }
 
 /* ===== HERO SECTION ===== */
@@ -753,6 +759,7 @@ ul {
     color: var(--color-text);
     background: var(--color-white);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    min-height: 48px; /* Minimum touch target height for mobile */
 }
 
 .form-group input:focus,
