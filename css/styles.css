@@ -1345,17 +1345,32 @@ html[dir="rtl"] .chatbot-toggle-btn {
 /* Chatbot Mobile Responsiveness */
 @media (max-width: 480px) {
     .chatbot-widget {
-        bottom: 5rem;
-        right: 1.5rem;
-        width: 300px;
-        height: 60vh;
-        max-height: 450px;
-        max-width: calc(100% - 3rem);
-        border-radius: 16px;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        border-radius: 0;
+        padding-top: env(safe-area-inset-top); /* Ensure header isn't hidden by notch */
+        display: flex;
+        flex-direction: column;
+        transform: none !important; /* Override the desktop scale transform */
     }
     
+    .chatbot-widget.active {
+        transform: none !important;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+
     .chatbot-messages {
-        height: 100%; /* Take remaining space */
+        height: auto; 
         flex: 1;
     }
     
