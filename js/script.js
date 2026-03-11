@@ -141,21 +141,27 @@ document.addEventListener('DOMContentLoaded', () => {
             const userName = document.getElementById('userName').value.trim();
             const busType = document.getElementById('busType').value;
             const tripDate = document.getElementById('tripDate').value;
+            const destinationType = document.getElementById('destinationType').value;
             const destination = document.getElementById('destination').value.trim();
             const tripDetails = document.getElementById('tripDetails').value.trim();
             
             // Format WhatsApp Message
-            let waMessage = `*New Booking Request - Ai Transindo*\n\n`;
-            waMessage += `*Name:* ${userName}\n`;
-            waMessage += `*Selected Fleet:* ${busType}\n`;
-            waMessage += `*Trip Date:* ${tripDate}\n`;
-            waMessage += `*Destination:* ${destination}\n`;
+            let waMessage = `*Pemesanan Baru - Ai Transindo*\n\n`;
+            waMessage += `*Nama:* ${userName}\n`;
+            waMessage += `*Armada:* ${busType}\n`;
+            waMessage += `*Tanggal:* ${tripDate}\n`;
+            waMessage += `*Tipe Tujuan:* ${destinationType}\n`;
+            waMessage += `*Tujuan Detail:* ${destination}\n`;
             
             if (tripDetails) {
-                waMessage += `*Additional Details:* ${tripDetails}\n`;
+                waMessage += `*Detail Tambahan:* ${tripDetails}\n`;
             }
             
-            waMessage += `\nPlease assist me with this booking.`;
+            if (destinationType === "Luar Kota") {
+                waMessage += `\n*(Catatan: Tujuan Luar Kota akan dikenakan biaya tambahan +Rp 500.000 dari harga dasar)*\n`;
+            }
+
+            waMessage += `\nMohon bantuannya untuk memproses pesanan ini.`;
             
             // Encode the message for URL
             const encodedMessage = encodeURIComponent(waMessage);
@@ -187,15 +193,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         fleet: {
             keywords: ["armada", "bus", "mobil", "minivan", "hiace", "elf", "tipe", "kendaraan", "jenis"],
-            response: "Kami menyediakan beberapa tipe armada premium: <br>- <strong>Minivan</strong> (14-19 kursi)<br>- <strong>Medium Bus</strong> (25-33 kursi)<br>- <strong>Big Bus</strong> (45-59 kursi)<br>- <strong>Sleeper Bus</strong> (20-24 suites mewah)."
+            response: "Kami menyediakan beberapa tipe armada premium: <br>- <strong>Minivan</strong> (14-19 kursi)<br>- <strong>Medium Bus</strong> (25-33 kursi)<br>- <strong>Big Bus</strong> (45-59 kursi)."
         },
         pricing: {
             keywords: ["harga", "biaya", "tarif", "sewa", "price", "pricelist", "berapa", "bayar"],
-            response: "Harga sewa kami bervariasi tergantung tipe bus, durasi, dan tujuan. <br>- Minivan: Mulai Rp 1.0M/Hari<br>- Medium Bus: Mulai Rp 1.5M/Hari<br>- Big Bus: Mulai Rp 2.5M/Hari<br>- Sleeper Bus: Mulai Rp 3.5M/Hari. <br>Silakan hubungi WhatsApp kami untuk penawaran pas."
+            response: "Harga sewa kami bervariasi tergantung tipe bus, durasi, dan tujuan. <br>- Minivan: Mulai Rp 1.0M/Hari<br>- Medium Bus: Mulai Rp 1.5M/Hari<br>- Big Bus: Mulai Rp 2.5M/Hari. <br><em>Catatan: Rute luar kota dikenakan tambahan +Rp 500.000</em>. <br>Silakan hubungi WhatsApp kami untuk penawaran pas."
         },
         facilities: {
             keywords: ["fasilitas", "ac", "toilet", "wifi", "karaoke", "tv", "audio", "nyaman"],
-            response: "Semua armada kami dilengkapi Full AC, reclining seats, dan audio/video. Big Bus memiliki fasilitas toilet, dan Sleeper Bus kami memiliki kasur privat (suites), Personal TV, dan pantry."
+            response: "Semua armada kami dilengkapi Full AC, reclining seats, dan audio/video. Big Bus juga memiliki fasilitas toilet."
         },
         booking: {
             keywords: ["pesan", "booking", "reservasi", "order", "cara", "hubungi", "kontak", "wa", "whatsapp"],

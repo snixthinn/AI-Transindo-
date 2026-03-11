@@ -180,30 +180,7 @@
                         </div>
                     </article>
 
-                    <!-- Sleeper Bus Card -->
-                    <article class="fleet-card reveal delay-1">
-                        <figure class="fleet-image">
-                            <img src="images/sleeper_bus.png" alt="Sleeper bus double-decker ultra mewah"
-                                loading="lazy">
-                            <figcaption class="fleet-badge luxury sr-only">Kategori Mewah</figcaption>
-                            <div class="fleet-badge luxury" aria-hidden="true"><i class="fas fa-star"></i> Mewah</div>
-                        </figure>
-                        <div class="fleet-content">
-                            <h3>Sleeper Bus</h3>
-                            <div class="fleet-specs" aria-label="Spesifikasi Bus">
-                                <span><i class="fas fa-bed" aria-hidden="true"></i> 20 - 24 Suites</span>
-                                <span><i class="fas fa-tv" aria-hidden="true"></i> Personal AVOD</span>
-                                <span><i class="fas fa-coffee" aria-hidden="true"></i> Pantry / Dapur</span>
-                            </div>
-                            <p>Pengalaman layaknya hotel di atas roda. Suite tidur pribadi dan fasilitas premium untuk
-                                perjalanan semalam.</p>
-                            <div class="fleet-actions">
-                                <span class="price" aria-label="Harga mulai 3.5 juta Rupiah per hari">Mulai Rp 3,5
-                                    Jt/Hari</span>
-                                <a href="#booking" class="btn btn-primary btn-block">Pesan Sleeper Bus</a>
-                            </div>
-                        </div>
-                    </article>
+
 
                 </div>
             </div>
@@ -235,21 +212,7 @@
                             </div>
                         </article>
 
-                        <!-- Review 2 -->
-                        <article class="testimonial-card" aria-hidden="true">
-                            <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
-                            <p class="review-text">"Kami memesan Luxury Sleeper Bus untuk perjalanan keluarga semalam ke
-                                Bali. Benar-benar terasa seperti hotel bintang 5 di atas roda. Sepadan dengan setiap sen
-                                untuk kenyamanan dan privasinya!"</p>
-                            <div class="reviewer">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&auto=format&fit=crop"
-                                    alt="Siti Rahma" class="reviewer-img" loading="lazy">
-                                <div class="reviewer-info">
-                                    <h4>Siti Rahma</h4>
-                                    <span>Wisatawan Keluarga</span>
-                                </div>
-                            </div>
-                        </article>
+
 
                         <!-- Review 3 -->
                         <article class="testimonial-card" aria-hidden="true">
@@ -365,9 +328,21 @@
                                     <option value="Minivan (14-19 Kursi)">Minivan (14-19 Kursi)</option>
                                     <option value="Medium Bus (25-33 Kursi)">Medium Bus (25-33 Kursi)</option>
                                     <option value="Big Bus (45-59 Kursi)">Big Bus (45-59 Kursi)</option>
-                                    <option value="Sleeper Bus (20-24 Suites)">Sleeper Bus (Mewah)</option>
                                 </select>
                             </div>
+
+                            <div class="form-group">
+                                <label for="destinationType">Tipe Tujuan <span class="required">*</span></label>
+                                <select id="destinationType" name="destinationType" required>
+                                    <option value="" disabled selected>-- Pilih Tipe Tujuan --</option>
+                                    <option value="Dalam Kota">Dalam Kota (Harga Normal)</option>
+                                    <option value="Luar Kota">Luar Kota (+Rp 500.000)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
 
                             <div class="form-group">
                                 <label for="tripDate">Tanggal Perjalanan <span class="required">*</span></label>
