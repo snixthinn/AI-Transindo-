@@ -204,6 +204,10 @@ document.addEventListener('DOMContentLoaded', () => {
         location: {
             keywords: ["lokasi", "alamat", "kantor", "dimana", "daerah", "posisi"],
             response: "Kantor pusat kami berlokasi di 123 Tour Street, Jakarta, Indonesia. Namun, kami melayani penjemputan untuk berbagai rute perjalanan."
+        },
+        thanks: {
+            keywords: ["terima kasih", "terimakasih", "makasih", "thanks", "tq", "thank you", "makasi", "nuhun"],
+            response: "Sama-sama! Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan lain atau membutuhkan bantuan pemesanan."
         }
     };
 
