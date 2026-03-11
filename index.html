@@ -406,5 +406,36 @@
 
     <!-- Custom JS -->
     <script src="js/script.js" defer></script>
+
+    <!-- Floating Chatbot Widget (Indonesian) -->
+    <div id="chatbot-widget" class="chatbot-widget" aria-hidden="true" role="dialog" aria-labelledby="chatbot-title">
+        <div class="chatbot-header">
+            <div class="chatbot-info">
+                <i class="fas fa-robot chatbot-avatar" aria-hidden="true"></i>
+                <div class="chatbot-title-container">
+                    <h3 id="chatbot-title">Asisten Ai Transindo</h3>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            <button id="chatbot-close-btn" class="chatbot-close" aria-label="Tutup Obrolan"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+            <!-- Initial Greeting -->
+            <div class="chat-message bot-message">
+                <p>Halo! Selamat datang di Ai Transindo. Ada yang bisa saya bantu terkait penyewaan bus pariwisata kami hari ini?</p>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ketik pesan Anda di sini..." aria-label="Pesan baru" autocomplete="off">
+            <button id="chatbot-send-btn" class="chatbot-send-btn" aria-label="Kirim Pesan"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle-btn" class="chatbot-toggle-btn" aria-label="Buka Obrolan Asisten">
+        <i class="fas fa-comment-dots"></i>
+    </button>
 </body>
 </html>
