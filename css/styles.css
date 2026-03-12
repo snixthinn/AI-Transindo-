@@ -147,6 +147,15 @@ ul {
     min-height: 48px; /* Larger touch target */
 }
 
+/* On larger screens, the block button shouldn't be 100% */
+@media (min-width: 768px) {
+    .btn-block {
+        display: inline-flex;
+        width: auto;
+        padding: 1rem 3rem;
+    }
+}
+
 /* ===== NAVIGATION ===== */
 .navbar {
     position: fixed;
